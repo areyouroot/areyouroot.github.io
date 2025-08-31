@@ -1,0 +1,175 @@
+/* Enhanced animations and micro-interactions */
+:root{
+  --blue-100: #f2f8fb;
+  --blue-200: #cfe9f7;
+  --blue-500: #2b6ea3;
+  --blue-600: #1f5f85;
+  --blue-700: #163f54;
+  --accent: #4aa3d9;
+  --soft-shadow: 0 8px 30px rgba(11,34,48,0.12);
+}
+
+/* Smooth global transitions */
+*{
+  transition: all 260ms cubic-bezier(.2,.9,.3,1);
+}
+
+/* Make buttons feel modern */
+.btn{
+  border-radius: 8px;
+  box-shadow: var(--soft-shadow);
+  transform: translateZ(0);
+}
+.btn:hover{
+  transform: translateY(-3px) scale(1.02);
+}
+
+/* Subtle hover for nav items */
+.navbar-nav > li > a{
+  transition: color 220ms ease, transform 220ms ease;
+}
+.navbar-nav > li > a:hover{
+  transform: translateY(-2px);
+  color: var(--blue-100) !important;
+}
+
+/* Intro caption gentle float */
+#text-carousel-intro-section .caption{
+  animation: floatCaption 8s ease-in-out infinite;
+}
+@keyframes floatCaption{
+  0%{transform: translateY(0)}
+  50%{transform: translateY(-8px)}
+  100%{transform: translateY(0)}
+}
+
+/* Reveal helpers (used by JS) */
+[data-animate]{
+  opacity: 0;
+  transform-origin: center center;
+}
+[data-animate].is-visible{
+  opacity: 1;
+  transform: none;
+}
+
+/* Common animation variants */
+.fade-up{ transform: translateY(18px); }
+.fade-up.is-visible{ animation: fadeUp 600ms cubic-bezier(.2,.9,.3,1) both; }
+@keyframes fadeUp{ from{ opacity: 0; transform: translateY(18px);} to{ opacity:1; transform: translateY(0);} }
+
+.fade-left{ transform: translateX(18px); }
+.fade-left.is-visible{ animation: fadeLeft 600ms cubic-bezier(.2,.9,.3,1) both; }
+@keyframes fadeLeft{ from{ opacity:0; transform: translateX(18px);} to{ opacity:1; transform: translateX(0);} }
+
+.scale-in{ transform: scale(.98) translateY(8px); }
+.scale-in.is-visible{ animation: scaleIn 520ms cubic-bezier(.2,.9,.3,1) both; }
+@keyframes scaleIn{ from{ opacity:0; transform: scale(.98) translateY(8px);} to{ opacity:1; transform: scale(1) translateY(0);} }
+
+/* Portfolio hover - lift and shadow */
+.portfolio_single_content:hover{
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 20px 50px rgba(10,30,45,0.12);
+}
+
+/* Progress bars animate width when visible */
+.progress .progress-bar{
+  transition: width 1200ms cubic-bezier(.2,.9,.3,1);
+}
+
+/* Improve owl pagination look */
+.owl-theme .owl-controls .owl-page span{
+  background: var(--blue-200);
+  border: 2px solid rgba(255,255,255,0.12);
+  width: 14px;
+  height: 14px;
+}
+.owl-theme .owl-controls .owl-page.active span{
+  background: var(--accent);
+  transform: scale(1.15);
+}
+
+/* Page loader smoothing */
+.page-loader{ transition: opacity 600ms ease; }
+.page-loader.hidden{ opacity: 0; visibility: hidden; }
+
+/* Small device tweaks */
+@media only screen and (max-width:767px){
+  .btn{ border-radius: 6px; }
+  #text-carousel-intro-section .caption{ animation: none; }
+}
+
+/* ===== Header: multi-color animated gradient + micro interactions ===== */
+.navbar{
+  transition: background 420ms ease, transform 320ms ease, box-shadow 320ms ease, backdrop-filter 420ms ease;
+  background: linear-gradient(90deg, rgba(25,102,138,0.88) 0%, rgba(43,110,163,0.88) 50%, rgba(74,163,217,0.88) 100%);
+  backdrop-filter: blur(6px);
+}
+.navbar.navbar-transparent{ background: transparent; box-shadow: none; }
+.navbar-fixed-top{ position: fixed; top: 0; left: 0; right: 0; z-index: 9999; }
+
+/* Slightly increase top padding so brand image isn't flush with page top */
+.navbar .container {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* When page scrolls this class is applied by existing code (navbar-shrink) */
+.navbar-shrink{
+  background: linear-gradient(90deg, #163f54 0%, #2b6ea3 100%);
+  box-shadow: 0 8px 30px rgba(11,34,48,0.16);
+}
+
+/* Hide/show for less-obtrusive sticky header */
+.nav-hidden{ transform: translateY(-112%); }
+.nav-visible{ transform: translateY(0); }
+
+/* Nav links: animated multi-color underline and subtle lift */
+.navbar-nav > li > a{
+  position: relative;
+  display: inline-block;
+  transition: color 260ms ease, transform 260ms ease;
+  color: var(--blue-100) !important;
+}
+.navbar-nav > li > a:after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center center;
+  height: 3px;
+  width: 64%;
+  background: linear-gradient(90deg, var(--accent), var(--blue-500));
+  border-radius: 3px;
+  transition: transform 320ms cubic-bezier(.2,.9,.3,1);
+}
+.navbar-nav > li > a:hover:after,
+.navbar-nav > li.active > a:after{
+  transform: translateX(-50%) scaleX(1);
+}
+.navbar-nav > li > a:hover{
+  transform: translateY(-3px);
+}
+
+/* Active link: gradient clipped text for a colorful accent (keeps readability on dark navbar) */
+.navbar-nav > li.active > a, .navbar-nav > li > a:hover{
+  background: linear-gradient(90deg,#cfe9f7,#4aa3d9,#2b6ea3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Brand interaction */
+.navbar-brand img{ transition: transform 420ms ease; }
+.navbar-brand:hover img{ transform: scale(1.06) rotate(-2deg); }
+/* Ensure brand image has a small top margin to sit comfortably below the window top */
+.navbar-brand img{
+  margin-top: 6px !important;
+}
+
+/* Avoid too strong animation on small devices */
+@media only screen and (max-width:767px){
+  .navbar{ backdrop-filter: none; }
+  .navbar-nav > li > a:after{ display: none; }
+}
