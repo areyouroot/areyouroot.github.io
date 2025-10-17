@@ -1,0 +1,133 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% ModernCV themes
+\moderncvstyle{banking} % casual, classic, oldstyle, banking
+\moderncvcolor{blue}    % blue, orange, green, red, purple, grey, black
+
+% Character encoding
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.9]{geometry}
+
+% Personal Information
+\name{Abdul Faheem}{A}
+\email{abdulfaheemasd@gmail.com}
+\phone[mobile]{+91 8870682288}
+\social[linkedin]{linkedin.com/in/abdulfaheem}
+\homepage{areyouroot.github.io}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+%-------------------------------------------------------------------------------
+\section{Professional Summary}
+A \textbf{Security Engineer and Full-Stack Developer} with 2+ years of experience specializing in product security, security automation, and strategic system design. Proven expertise in penetration testing, vulnerability management, and DevSecOps integration. Demonstrated leadership in building and mentoring security teams, driving AI/security R\&D, and managing cross-functional projects from conception to deployment. Combines deep technical execution with a strategic, product-focused mindset to bridge the gap between engineering, security, and business objectives.
+
+%-------------------------------------------------------------------------------
+\section{Core Competencies \& Skills}
+\cvitem{Security \& Risk Management}{
+\begin{itemize}
+    \item Vulnerability Assessment \& Management
+    \item DevSecOps, Security Automation (AI-Driven)
+    \item Security Awareness Training
+    \item Patch Development \& Deployment
+\end{itemize}}
+
+\cvitem{Engineering \& Development}{
+\begin{itemize}
+    \item Full-Stack Development (C\#, .NET, Angular, MSSQL)
+    \item Python Scripting \& Automation
+    \item AI Integration \& Prompt Engineering
+    \item Blockchain \& Distributed Systems
+    \item Docker \& Hyper-V
+    \item Linux Administration
+    \item CI/CD Pipeline Management
+    \item System Migration \& Modernization
+\end{itemize}}
+
+\cvitem{Leadership \& Strategy}{
+\begin{itemize}
+    \item Product Strategy \& Roadmapping
+    \item Team Leadership \& Mentorship
+    \item R\&D and Innovation Management
+    \item Startup Founder \& Entrepreneurial Mindset
+    \item Technical Project Management
+    \item Public Speaking \& Technical Evangelism
+    \item Business Development \& Networking
+\end{itemize}}
+
+%-------------------------------------------------------------------------------
+\section{Professional Experience}
+
+\cventry{Jul 2023 -- Present}{\textbf{Software Engineer (Security \& Full-Stack)}}{Hubstream India Pvt Ltd}{Chennai, India}{}{
+\textbf{Security Engineering \& DevSecOps:}
+\begin{itemize}
+    \item Conducted comprehensive penetration testing on production systems, identifying and patching critical vulnerabilities, improving resilience and compliance posture.
+    \item Integrated Snyk and SonarQube into CI/CD pipelines, automating security scans and reducing manual review overhead by 30\%.
+    \item Delivered company-wide security awareness training on phishing, social engineering, and secure coding.
+\end{itemize}
+
+\textbf{Product Development \& System Modernization:}
+\begin{itemize}
+    \item Engineered a robust installer application from scratch, standardizing product deployment processes.
+    \item Led modernization of legacy framework servers and core product to .NET 9, enhancing performance and security.
+    \item Stabilized product quality and performance as a key member of the Customer Champions team.
+\end{itemize}
+
+\textbf{AI Innovation \& Leadership:}
+\begin{itemize}
+    \item Spearheaded PoC research on AI tools, leading to productivity improvements across engineering and product teams.
+    \item Founded and led the internal \textit{"Trust Null"} Security Team for AI-driven security automation R\&D.
+    \item Led a team to win an internal hackathon with a custom AI-powered code generation tool (pre-ChatGPT-4 era).
+\end{itemize}
+}
+
+%-------------------------------------------------------------------------------
+\section{Leadership \& Entrepreneurial Experience}
+
+\cventry{2025 -- Present}{\textbf{Founder}}{AI-Driven Digital Forensics Startup (Weekend Venture)}{}{}{
+\begin{itemize}
+    \item Developing a prototype for an AI-driven digital forensics solution automating evidence analysis.
+    \item Defined product vision, MVP design, business model, and scaling roadmap.
+    \item Managing a team of 3 co-founders and building strategic partnerships.
+\end{itemize}}
+
+\cventry{2023 -- Present}{\textbf{Lead}}{Trust Null Security Team, Hubstream}{}{}{
+\begin{itemize}
+    \item Built and lead a cybersecurity research team focused on AI automation.
+    \item Directed R\&D initiatives, resulting in internal security automation tools.
+    \item Mentored peers in ethical hacking, secure coding, and proactive defense.
+\end{itemize}}
+
+%-------------------------------------------------------------------------------
+\section{Projects}
+
+\cventry{}{Blockchain-Based Decentralized Storage System}{Academic Project}{}{}{
+\begin{itemize}
+    \item Developed a distributed file storage system using blockchain ensuring data integrity and immutability.
+    \item Implemented smart contracts for access control and IPFS for decentralized storage.
+\end{itemize}}
+
+\cventry{}{AI-Powered Facial Recognition Attendance System}{Academic Project}{}{}{
+\begin{itemize}
+    \item Built a real-time attendance system using Python, OpenCV, and ML models achieving 95\% accuracy.
+\end{itemize}}
+
+\cventry{}{VISH – AI Wrapper for Shopify}{Personal Project}{}{}{
+\begin{itemize}
+    \item Developed an AI chatbot interface enhancing customer service and engagement on Shopify.
+\end{itemize}}
+
+%-------------------------------------------------------------------------------
+\section{Education}
+\cventry{}{B.Tech in Information Technology}{BS Abdur Rahman Crescent Institute of Science and Technology}{Chennai}{}{CGPA: 8.75/10}
+
+%-------------------------------------------------------------------------------
+\section{Additional Highlights}
+\begin{itemize}
+    \item \textbf{Invited Guest Lecturer:} Delivered expert lectures on AI and Cybersecurity at multiple institutions.
+    \item \textbf{Hackathon Winner:} Led the winning team in a corporate hackathon developing an AI-based code generation tool.
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+\end{document}
