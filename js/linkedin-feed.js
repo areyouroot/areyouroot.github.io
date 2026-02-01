@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             ${post.comments} comments
                         </div>
                         <div class="linkedin-actions">
-                            <a href="https://linkedin.com/in/abdulfaheem" target="_blank">View <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://www.linkedin.com/in/abdul-faheem-a-04a072200/" target="_blank">View <i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
