@@ -1,0 +1,477 @@
+/* Luxury Light Theme - Apple Aesthetic */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+    --primary-color: #0071e3; /* Apple Blue or similar premium blue */
+    --secondary-color: #1d1d1f; /* Almost black */
+    --accent-color: #86868b; /* Apple Gray */
+    --bg-light: #fbfbfd; /* Off white */
+    --bg-white: #ffffff;
+    --text-main: #1d1d1f;
+    --text-muted: #86868b;
+    --border-light: rgba(0, 0, 0, 0.1);
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif; /* Premium/Luxury feel */
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: #005bb5;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(255, 255, 255, 0.85); /* Frosty light */
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--secondary-color) !important;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+.nav-link {
+    color: var(--text-main) !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-left: 25px;
+    position: relative;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.nav-link::after {
+    display: none; /* Minimalist - remove underline */
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* Use the requested slider image */
+    background: url('../img/slider-bg.jpg') no-repeat center center/cover;
+}
+
+/* White overlay to ensure text readability and light theme */
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Reduced opacity to show image clearly */
+    /* Blur removed as per request */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    letter-spacing: -1px;
+    background: none;
+    -webkit-text-fill-color: initial;
+}
+
+.hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--text-main);
+    margin-bottom: 40px;
+}
+
+.btn-primary-custom {
+    background: var(--secondary-color);
+    border: none;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 50px; /* Pill shape */
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-primary-custom:hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.btn-outline-custom {
+    background: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-outline-custom:hover {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+/* Sections General */
+section {
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    display: inline-block;
+    position: relative;
+}
+
+/* Ventures / Founder Section */
+#ventures {
+    background-color: var(--bg-white);
+}
+
+.venture-card {
+    background: #fff;
+    border: 1px solid var(--border-light);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.venture-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.venture-card h3 {
+    color: var(--primary-color);
+}
+
+/* Experience Timeline */
+#experience {
+    background-color: var(--bg-light);
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--border-light);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-container.left { left: 0; text-align: right; }
+.timeline-container.right { left: 50%; text-align: left; }
+
+/* Dot on timeline */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: -8px;
+    top: 25px;
+    background-color: #fff;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+.timeline-container.right::after {
+    left: -8px;
+}
+
+.timeline-content {
+    padding: 30px;
+    background: var(--bg-white);
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--border-light);
+    transition: all 0.3s;
+}
+
+.timeline-content:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.timeline-date {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Skills */
+#skills {
+    background-color: var(--bg-white);
+}
+
+.skill-tag {
+    display: inline-block;
+    background: #f5f5f7;
+    color: var(--secondary-color);
+    padding: 8px 18px;
+    border-radius: 20px;
+    margin: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.skill-tag:hover {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+/* Projects & Cards */
+.card-custom {
+    background: var(--bg-white);
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    overflow: hidden;
+    /* height: 100%; Removed to fix stacking overlap */
+    transition: all 0.4s ease;
+    box-shadow: var(--shadow-soft);
+}
+
+.card-custom:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-title {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.card-text {
+    color: var(--text-muted);
+}
+
+/* LinkedIn Feed Card Styles */
+.linkedin-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 30px; /* Ensure spacing in stacks */
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* For grid usage */
+}
+
+.linkedin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.linkedin-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+.linkedin-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 2px solid var(--bg-light);
+}
+
+.linkedin-info h5 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.linkedin-info span {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.linkedin-body {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.linkedin-body p {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    margin-bottom: 15px;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Limit text lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.linkedin-footer {
+    padding: 15px 20px;
+    background: #f9fafb;
+    border-top: 1px solid rgba(0,0,0,0.03);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkedin-stats {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.linkedin-actions a {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.linkedin-actions a:hover {
+    text-decoration: underline;
+}
+
+
+/* Achievements */
+#achievements {
+    background-color: var(--bg-light);
+}
+
+.list-group-item {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border-light);
+    padding: 15px 0;
+    color: var(--text-main);
+}
+.list-group-item strong {
+    color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    background: #f5f5f7;
+    padding: 80px 0 40px;
+    text-align: center;
+    border-top: 1px solid var(--border-light);
+}
+
+.social-links a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    color: var(--secondary-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background: var(--secondary-color);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+    .timeline-container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .timeline-container.left, .timeline-container.right {
+        left: 0;
+        text-align: left;
+    }
+    .timeline-container::after {
+        left: 23px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
