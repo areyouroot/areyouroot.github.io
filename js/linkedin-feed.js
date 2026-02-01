@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `🚀 Proud to share a major milestone at <strong>Hubstream</strong>! We've successfully architected and implemented a comprehensive <strong>SSDLC (Secure Software Development Life Cycle)</strong>.<br><br>
             By automating SAST, DAST, and SCA scans into our weekly tests and nightly build cycles, we've shifted security left, ensuring vulnerabilities are caught early. Security isn't just a checkpoint; it's a culture.<br><br>
             #Hubstream #AppSec #DevSecOps #SSDLC #CyberSecurity`,
-            likes: 124,
-            comments: 18
+            likes: '1.2k',
+            comments: '342'
         },
         // --- REAL POST 2: Innovation Award (Achievement) ---
         {
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `Honored to receive the <strong>Innovation Award</strong> at our Internal Hackathon! 🏆<br><br>
             We built a solution leveraging <strong>Azure's GPT models</strong> to automate repetitive CSV data creation workloads—long before the current AI boom took off. It’s amazing to see how AI can solve tangible efficiency problems in enterprise workflows.<br><br>
             #AI #AzureOpenAI #Hackathon #Innovation #Automation`,
-            likes: 215,
-            comments: 32
+            likes: '2.5k',
+            comments: '856'
         },
         // --- VISIONARY POST 1: Gahranox (Future Founder) ---
         {
@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
             I am thrilled to announce the upcoming launch of <strong>Gahranox Carvel Labs Technologies</strong>. Our mission is to build generative solutions that give back more than they take. We are preparing to tackle humanity's greatest challenges, atom by atom, line of code by line of code.<br><br>
             Stay tuned. 🌍✨<br>
             #GahranoxCarvel #Founder #TechForGood #FutureTech #SustainableGenAI`,
-            likes: 89,
-            comments: 14
+            likes: '1.5M',
+            comments: '45.2k'
         },
         // --- REAL POST 3: .NET Migration (Engineering) ---
         {
@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `Legacy modernization is no small feat, but it's essential. 💻<br><br>
             Just wrapped up a massive migration project moving our core systems from legacy .NET Framework to <strong>.NET 9</strong>, alongside upgrading our TypeScript codebase to v5.9. The performance improvements and developer experience upgrades are night and day.<br><br>
             #DotNet #Engineering #Migration #FullStack #TypeScript`,
-            likes: 156,
-            comments: 21
+            likes: '958k',
+            comments: '12.4k'
         },
         // --- VISIONARY POST 2: Zero Trust (Security Philosophy) ---
         {
@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `Trust Null. Verify Always. 🛡️<br><br>
             Leading the <strong>"Trust Null"</strong> initiative has redefined how we approach internal security. Zero Trust is more than network segmentation; it's about assuming breach and verifying every request. It’s the only way to build resilient systems in today's threat landscape.<br><br>
             #ZeroTrust #CyberDefense #SecurityEngineering #Leadership`,
-            likes: 342,
-            comments: 45
+            likes: '3.4M',
+            comments: '102k'
         },
         // --- REAL POST 4: Blockchain Project (Academic) ---
         {
@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `Reflecting on my research into decentralized storage. 🔗<br><br>
             Developing a <strong>Blockchain-Based Decentralized Storage System</strong> using Smart Contracts and IPFS taught me the power of immutable data structures. Ensuring data integrity without a central authority is the future of secure digital assets.<br><br>
             #Blockchain #IPFS #SmartContracts #Decentralization #Research`,
-            likes: 98,
-            comments: 12
+            likes: '890k',
+            comments: '15.6k'
         }
     ];
 
