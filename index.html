@@ -57,7 +57,7 @@
             <h1 class="hero-title">ABDUL FAHEEM A</h1>
             <p class="hero-subtitle">Security Engineer | Full-Stack Developer | Tech Founder</p>
             <div class="d-flex justify-content-center gap-3">
-                <a href="#ventures" class="btn btn-primary-custom">My Ventures</a>
+                <a href="#experience" class="btn btn-primary-custom">My Experience</a>
                 <a href="./resume/simple_resume.pdf" target="_blank" class="btn btn-outline-custom">Download Resume</a>
             </div>
         </div>
@@ -219,56 +219,64 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- LinkedIn Feed Section -->
     <section id="projects" style="background-color: #fbfbfd;">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <h2>Projects & Portfolio</h2>
+                <h2>Latest Updates</h2>
+                <p class="text-muted">Featured Posts from LinkedIn</p>
             </div>
 
-            <!-- Academic/Tech Projects -->
-            <h3 class="mb-4 text-center" style="font-size: 1.5rem; color: var(--text-muted);">Featured Works</h3>
-            <div class="row mb-5">
-                <div class="col-md-4 mb-4" data-aos="fade-up">
-                    <div class="card-custom">
-                        <div class="card-body">
-                            <h4 class="card-title">Blockchain Storage</h4>
-                            <p class="card-text">Decentralized storage system using blockchain, smart contracts, and IPFS to ensure data immutability and secure access control.</p>
-                            <span class="badge bg-primary rounded-pill">Blockchain</span>
-                            <span class="badge bg-secondary rounded-pill">IPFS</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-custom">
-                        <div class="card-body">
-                            <h4 class="card-title">AI Attendance System</h4>
-                            <p class="card-text">Real-time system using Python, OpenCV, and ML models, achieving 95% recognition accuracy.</p>
-                            <span class="badge bg-primary rounded-pill">Python</span>
-                            <span class="badge bg-info rounded-pill">ML</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-custom">
-                        <div class="card-body">
-                            <h4 class="card-title">GitHub Projects</h4>
-                            <p class="card-text">Explore more projects like "Are You Root?" (AI pentesting tools) and Thailus (security automation).</p>
-                            <a href="https://github.com/areyouroot" target="_blank" class="btn btn-outline-custom btn-sm mt-3">View GitHub</a>
-                        </div>
+            <div id="linkedin-feed-container" class="row justify-content-center">
+                <!-- Content will be injected by js/linkedin-feed.js -->
+                <div class="col-12 text-center p-5">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading Feed...</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Portfolio Grid (Images) -->
-            <h3 class="mb-4 text-center" style="font-size: 1.5rem; color: var(--text-muted);">Gallery</h3>
-            <div class="row g-4">
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in"><div class="card-custom"><img src="img/portfolio/p1.jpg" class="project-img" alt="Project 1"></div></div>
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100"><div class="card-custom"><img src="img/portfolio/p2.jpg" class="project-img" alt="Project 2"></div></div>
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200"><div class="card-custom"><img src="img/portfolio/p3.jpg" class="project-img" alt="Project 3"></div></div>
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in"><div class="card-custom"><img src="img/portfolio/p4.jpg" class="project-img" alt="Project 4"></div></div>
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100"><div class="card-custom"><img src="img/portfolio/p5.jpg" class="project-img" alt="Project 5"></div></div>
-                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200"><div class="card-custom"><img src="img/portfolio/p6.jpg" class="project-img" alt="Project 6"></div></div>
+            <!-- Academic Projects -->
+            <div class="row justify-content-center mt-5 pt-5 border-top" data-aos="fade-up">
+                <div class="col-lg-10">
+                    <h3 class="mb-5 text-center" style="font-family: 'Playfair Display', serif;">Academic Research</h3>
+
+                    <div class="row g-4">
+                        <!-- Project 1 -->
+                        <div class="col-md-6">
+                            <div class="card-custom h-100 p-4 border-0 shadow-sm" style="background: #fff;">
+                                <h4 class="card-title text-primary mb-2" style="font-size: 1.25rem;">Blockchain-Based Decentralized Storage</h4>
+                                <p class="card-text small mb-3 text-muted text-uppercase" style="letter-spacing: 1px; font-size: 0.75rem;">Academic Project</p>
+                                <p class="mb-4 text-muted">Developed a distributed storage system using blockchain, smart contracts, and IPFS to ensure data immutability and secure access control.</p>
+                                <div>
+                                    <span class="badge bg-light text-secondary border fw-normal me-1">Blockchain</span>
+                                    <span class="badge bg-light text-secondary border fw-normal me-1">IPFS</span>
+                                    <span class="badge bg-light text-secondary border fw-normal">Smart Contracts</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="col-md-6">
+                            <div class="card-custom h-100 p-4 border-0 shadow-sm" style="background: #fff;">
+                                <h4 class="card-title text-primary mb-2" style="font-size: 1.25rem;">AI-Powered Facial Recognition Attendance</h4>
+                                <p class="card-text small mb-3 text-muted text-uppercase" style="letter-spacing: 1px; font-size: 0.75rem;">Academic Project</p>
+                                <p class="mb-4 text-muted">Built a real-time system using Python, OpenCV, and ML models, achieving 95% recognition accuracy.</p>
+                                <div>
+                                    <span class="badge bg-light text-secondary border fw-normal me-1">Python</span>
+                                    <span class="badge bg-light text-secondary border fw-normal me-1">OpenCV</span>
+                                    <span class="badge bg-light text-secondary border fw-normal">ML</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="https://linkedin.com/in/abdulfaheem" target="_blank" class="btn btn-outline-custom">
+                    <i class="fab fa-linkedin me-2"></i> View Full Profile
+                </a>
             </div>
         </div>
     </section>
@@ -367,6 +375,9 @@
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- LinkedIn Feed Mock JS -->
+    <script src="js/linkedin-feed.js"></script>
 
     <script>
         // Initialize AOS

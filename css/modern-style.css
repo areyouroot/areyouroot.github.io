@@ -10,8 +10,8 @@
     --text-main: #1d1d1f;
     --text-muted: #86868b;
     --border-light: rgba(0, 0, 0, 0.1);
-    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
-    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.1);
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 html {
@@ -95,8 +95,8 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.75); /* High opacity white overlay */
-    backdrop-filter: blur(3px); /* Subtle blur for depth */
+    background: rgba(255, 255, 255, 0.5); /* Reduced opacity to show image clearly */
+    /* Blur removed as per request */
 }
 
 .hero-content {
@@ -299,7 +299,7 @@ section {
     border: 1px solid var(--border-light);
     border-radius: 16px;
     overflow: hidden;
-    height: 100%;
+    /* height: 100%; Removed to fix stacking overlap */
     transition: all 0.4s ease;
     box-shadow: var(--shadow-soft);
 }
@@ -323,13 +323,92 @@ section {
     color: var(--text-muted);
 }
 
-/* Portfolio Grid specific */
-.project-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 1px solid var(--border-light);
+/* LinkedIn Feed Card Styles */
+.linkedin-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 30px; /* Ensure spacing in stacks */
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* For grid usage */
 }
+
+.linkedin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.linkedin-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+.linkedin-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 2px solid var(--bg-light);
+}
+
+.linkedin-info h5 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.linkedin-info span {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.linkedin-body {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.linkedin-body p {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    margin-bottom: 15px;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Limit text lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.linkedin-footer {
+    padding: 15px 20px;
+    background: #f9fafb;
+    border-top: 1px solid rgba(0,0,0,0.03);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkedin-stats {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.linkedin-actions a {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.linkedin-actions a:hover {
+    text-decoration: underline;
+}
+
 
 /* Achievements */
 #achievements {

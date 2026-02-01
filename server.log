@@ -1,0 +1,10 @@
+127.0.0.1 - - [01/Feb/2026 08:58:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [01/Feb/2026 08:58:34] "GET /css/modern-style.css HTTP/1.1" 200 -
+127.0.0.1 - - [01/Feb/2026 08:58:34] "GET /img/portfolio/p3.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [01/Feb/2026 08:58:34] "GET /img/WhatsApp%20Image%202025-08-31%20at%2013.00.12_28232640.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [01/Feb/2026 08:58:34] "GET /img/portfolio/p1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [01/Feb/2026 08:58:34] "GET /img/portfolio/p4.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [01/Feb/2026 08:58:34] "GET /img/portfolio/p2.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [01/Feb/2026 08:58:34] "GET /img/portfolio/p5.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [01/Feb/2026 08:58:34] "GET /img/portfolio/p6.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [01/Feb/2026 08:58:35] "GET /img/slider-bg.jpg HTTP/1.1" 200 -
