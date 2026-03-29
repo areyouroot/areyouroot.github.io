@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
 
 :root {
-    --primary-color: #0071e3; /* Apple Blue or similar premium blue */
+    --primary-color: #d48806; /* Golden Orange */
+    --bs-primary: #d48806; /* Bootstrap Override */
     --secondary-color: #1d1d1f; /* Almost black */
     --accent-color: #86868b; /* Apple Gray */
     --bg-light: #fbfbfd; /* Off white */
@@ -39,7 +40,7 @@ a {
 }
 
 a:hover {
-    color: #005bb5;
+    color: #b37405;
 }
 
 /* Navbar */
