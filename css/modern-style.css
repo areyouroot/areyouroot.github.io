@@ -78,31 +78,80 @@ a:hover {
     display: none; /* Minimalist - remove underline */
 }
 
-/* Hero Section */
+/* Hero Section with Cosmic Theme */
 #hero {
     height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
-    /* Use the requested slider image */
-    background: url('../img/slider-bg.jpg') no-repeat center center/cover;
+    background: #050505; /* Fallback */
+    overflow: hidden;
 }
 
-/* White overlay to ensure text readability and light theme */
-#hero::before {
-    content: '';
+/* CSS-only Space & Earth Background */
+.cosmic-bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.5); /* Reduced opacity to show image clearly */
-    /* Blur removed as per request */
+    background: linear-gradient(to bottom, #000000 0%, #0a0a2e 70%, #1a1a4e 100%);
+    z-index: 0;
+}
+
+/* Stars using box-shadow on pseudo-elements */
+.cosmic-bg::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: 10vw 20vh #fff, 30vw 10vh #fff, 50vw 40vh #fff, 70vw 20vh #fff, 90vw 30vh #fff,
+                15vw 50vh #fff, 35vw 70vh #fff, 55vw 85vh #fff, 75vw 60vh #fff, 95vw 75vh #fff,
+                5vw 90vh #fff, 25vw 35vh #fff, 45vw 15vh #fff, 65vw 45vh #fff, 85vw 5vh #fff;
+    animation: stars-shimmer 4s infinite alternate;
+}
+
+@keyframes stars-shimmer {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+
+/* The Earth */
+.earth {
+    position: absolute;
+    bottom: -400px; /* Partial view */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle at 50% 0%,
+                #4db8ff 0%,   /* Atmosphere glow */
+                #1e90ff 20%,  /* Deep ocean */
+                #2e8b57 45%,  /* Continents */
+                #1b4f72 70%); /* Darker side */
+    border-radius: 50%;
+    box-shadow: 0 0 100px rgba(30, 144, 255, 0.4), inset 0 20px 50px rgba(255,255,255,0.2);
+    z-index: 1;
+}
+
+/* Earth Clouds layer */
+.earth::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3) 0%, transparent 40%),
+                radial-gradient(circle at 70% 50%, rgba(255,255,255,0.2) 0%, transparent 30%);
+    opacity: 0.6;
 }
 
 .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 10;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -112,18 +161,25 @@ a:hover {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 20px;
-    color: var(--secondary-color);
     letter-spacing: -1px;
-    background: none;
-    -webkit-text-fill-color: initial;
+    background: linear-gradient(135deg, #ffd700 0%, #d48806 50%, #ffd700 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: golden-shimmer 4s linear infinite;
+}
+
+@keyframes golden-shimmer {
+    to { background-position: 200% center; }
 }
 
 .hero-subtitle {
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
-    color: var(--text-main);
+    color: #fff; /* White for better contrast on dark cosmic bg */
     margin-bottom: 40px;
+    opacity: 0.9;
 }
 
 .btn-primary-custom {
@@ -172,9 +228,13 @@ section {
 
 .section-title h2 {
     font-size: 2.5rem;
-    color: var(--secondary-color);
     display: inline-block;
     position: relative;
+    background: linear-gradient(135deg, #ffd700 0%, #d48806 50%, #ffd700 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: golden-shimmer 6s linear infinite;
 }
 
 /* Ventures / Founder Section */
