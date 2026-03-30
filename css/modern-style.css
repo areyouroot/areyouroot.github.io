@@ -43,34 +43,54 @@ a:hover {
     color: #b37405;
 }
 
-/* Navbar */
+/* Navbar - Cosmic Dark */
 .navbar {
-    background: rgba(255, 255, 255, 0.85); /* Frosty light */
+    background: #000; /* Deep space */
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     padding: 15px 0;
     transition: all 0.3s ease;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Starfield for Navbar */
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: 5vw 5vh #fff, 15vw 10vh #fff, 25vw 3vh #fff, 35vw 12vh #fff, 45vw 6vh #fff,
+                55vw 2vh #fff, 65vw 11vh #fff, 75vw 4vh #fff, 85vw 9vh #fff, 95vw 1vh #fff;
+    opacity: 0.3;
+    z-index: -1;
+    animation: stars-shimmer 4s infinite alternate;
 }
 
 .navbar-brand {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    color: var(--secondary-color) !important;
+    color: #fff !important; /* White for dark theme */
     font-size: 1.5rem;
     letter-spacing: -0.5px;
 }
 
 .nav-link {
-    color: var(--text-main) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
     font-weight: 500;
     font-size: 0.95rem;
     margin-left: 25px;
     position: relative;
-    opacity: 0.8;
-    transition: opacity 0.2s;
+    transition: all 0.2s;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
     opacity: 1;
 }
 

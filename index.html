@@ -24,7 +24,7 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
 
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">ABDUL FAHEEM</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -423,15 +423,15 @@
             easing: 'ease-out-cubic'
         });
 
-        // Navbar Scroll Effect (Updated for Light Theme)
+        // Navbar Scroll Effect (Cosmic Dark)
         const navbar = document.querySelector('.navbar');
         window.addEventListener('scroll', function() {
             if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-                navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.05)';
+                navbar.style.background = 'rgba(0, 0, 0, 0.95)';
+                navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.3)';
                 navbar.style.padding = '10px 0';
             } else {
-                navbar.style.background = 'rgba(255, 255, 255, 0.85)';
+                navbar.style.background = '#000';
                 navbar.style.boxShadow = 'none';
                 navbar.style.padding = '15px 0';
             }
