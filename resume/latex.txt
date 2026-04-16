@@ -43,14 +43,12 @@
 
 % Professional Summary
 \section{PROFESSIONAL SUMMARY}
-\keyword{Cloud Security} and \keyword{Secrets Management Engineer} with 3+ years of experience securing cloud-native environments. Expert in \keyword{HashiCorp Vault} (dynamic secrets, JIT credentials, PKI), \keyword{CSPM/CNAPP}, and \keyword{Zero Trust} architecture. Proven ability to embed security into CI/CD pipelines, automate compliance (SOC2, GDPR), and reduce credential exposure through vault-based authentication. Seeking roles in \keyword{Cloud Security Engineering} and \keyword{Secrets Management}.
+\keyword{Cloud Security} and \keyword{Cyber Security Engineer} with 3+ years of experience securing cloud-native environments. Expert in \keyword{CSPM/CNAPP} and \keyword{Zero Trust} architecture. Proven ability to embed security into CI/CD pipelines and automate compliance (\keyword{NIST}). Seeking entry-level roles in \keyword{Cloud Security Engineering} or advanced roles in \keyword{Cyber Security Automation}.
 
 \section{CORE COMPETENCIES}
 \begin{itemize}[leftmargin=*, nosep, after=\vspace{0.2ex}]
-    \item \keyword{HashiCorp Vault} (Dynamic Secrets, JIT, OIDC) \hfill \keyword{Cloud Security Posture Management}
-    \item \keyword{Zero Trust \& Identity Security} \hfill \keyword{DevSecOps \& CI/CD Security}
-    \item \keyword{Threat Modelling (STRIDE/PASTA)} \hfill \keyword{Compliance Automation (SOC2, GDPR, NIST)}
-    \item \keyword{AWS/GCP/Azure Security} \hfill \keyword{Kubernetes \& Container Security}
+    \item \keyword{Zero Trust} \hfill \keyword{Cloud Security Posture Management}
+    \item \keyword{Threat Modelling (STRIDE)} \hfill \keyword{Compliance Automation (NIST)}
 \end{itemize}
 
 \section{PROFESSIONAL EXPERIENCE}
@@ -58,23 +56,21 @@
 \textit{HUBSTREAM INDIA PVT LTD, Chennai} \hfill \textit{March 2023 -- Present}
 
 \begin{itemize}[leftmargin=*, nosep, after=\vspace{0.2ex}]
-    \item Designed and deployed enterprise \keyword{secrets management} using \keyword{HashiCorp Vault} – implemented dynamic database credentials, JIT access, PKI, and OIDC authentication for Kubernetes and CI/CD pipelines, eliminating hardcoded secrets.
-    \item Managed \keyword{cloud security posture} across AWS (primary) and GCP (secondary) using CrowdStrike Falcon CSPM/CNAPP; enforced least-privilege IAM, encryption, and network controls via automated guardrails.
+    \item Managed \keyword{cloud security posture} across AWS using CSPM/CNAPP tools; enforced least-privilege IAM, encryption, and network controls via automated guardrails.
     \item Built \keyword{DevSecOps} pipelines integrating SAST (SonarQube), DAST (OWASP ZAP), and SCA (Snyk) into Azure Pipelines and GitHub Actions, reducing vulnerability remediation time by 40\%.
-    \item Conducted threat modelling (STRIDE/PASTA) and \keyword{Zero Trust} workshops, leading to identity-centric access controls and reduced blast radius.
-    \item Automated compliance evidence collection for \keyword{SOC2} and \keyword{GDPR} using policy-as-code (OPA/Rego) and Terraform, cutting audit prep time by 20 hours/week.
-    \item Responded to security incidents (phishing, credential compromise) using SIEM logs (Splunk) and EDR (CrowdStrike), implementing containment and post-mortem fixes.
+    \item Conducted threat modelling (\keyword{STRIDE}) and \keyword{Zero Trust} workshops, leading to identity-centric access controls and reduced blast radius.
+    \item Automated compliance evidence collection for \keyword{NIST} using policy-as-code (OPA/Rego) and Terraform.
+    \item Leveraged \keyword{n8n} workflow automation and AI agents to streamline security operations, including alert enrichment and automated incident response playbooks.
     \item Reviewed \keyword{Terraform} IaC for security misconfigurations; enforced encryption, network segmentation, and least privilege through merge request feedback.
 \end{itemize}
 
 \section{TECHNICAL SKILLS}
 \begin{itemize}[leftmargin=*, nosep, after=\vspace{0.2ex}]
-    \item \keyword{Secrets \& Identity:} HashiCorp Vault (dynamic secrets, PKI, transit engine), AWS Secrets Manager, Azure Key Vault, JIT credentials, OIDC, workload identity, Vault CSI provider
-    \item \keyword{Cloud Security:} AWS (IAM, GuardDuty, Security Hub, Inspector), Azure Security, GCP, CSPM/CNAPP (CrowdStrike), Terraform, CloudFormation, OPA/Rego
-    \item \keyword{AppSec \& DevSecOps:} SAST/DAST/SCA, OWASP Top 10, Burp Suite, Snyk, SonarQube, Trivy, CI/CD (Jenkins, GitHub Actions, Azure Pipelines)
-    \item \keyword{Security Operations:} CrowdStrike Falcon (EDR, CSPM), Splunk, WAF, SASE, Cloudflare
-    \item \keyword{Programming:} Python, Bash, C\# (.NET), TypeScript, SQL
-    \item \keyword{Compliance:} SOC2, GDPR, PCI DSS, NIST 800-53, ISO 27001
+    \item \keyword{Secrets \& Identity:} AWS Secrets Manager, Azure Key Vault
+    \item \keyword{Cloud Security:} AWS (IAM, GuardDuty, Security Hub, Inspector), Azure Security, CSPM/CNAPP, Terraform, CloudFormation, OPA/Rego
+    \item \keyword{AppSec \& DevSecOps:} SAST/DAST/SCA, OWASP Top 10, Burp Suite, Snyk, SonarQube, CI/CD (GitHub Actions, Azure Pipelines)
+    \item \keyword{Programming:} Python, Bash, C\# (.NET), TypeScript, SQL, PowerShell
+    \item \keyword{Compliance:} NIST 800-53
 \end{itemize}
 
 \section{EDUCATION}
