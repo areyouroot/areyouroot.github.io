@@ -1,0 +1,75 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{ragged2e}
+
+% Color for keywords
+\definecolor{keywordcolor}{RGB}{0,102,204}
+\newcommand{\keyword}[1]{\textbf{\textcolor{keywordcolor}{#1}}}
+
+% Font settings
+\allsectionsfont{\sffamily\bfseries}
+\renewcommand{\familydefault}{\sfdefault}
+\linespread{1.05}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.8ex}
+
+% Section formatting
+\titleformat{\section}{\large\sffamily\bfseries}{}{0em}{}[\titrule]
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titleformat{\subsection}{\sffamily\bfseries}{}{0em}{}
+\titlespacing{\subsection}{0pt}{1ex}{0.5ex}
+
+\hypersetup{colorlinks=true, linkcolor=keywordcolor, urlcolor=keywordcolor}
+\pagestyle{empty}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge \textbf{ABDUL FAHEEM A}} \\[0.3em]
+    \faPhone\ +91 8870682288 \quad
+    \faEnvelope\ \href{mailto:abdulfaheemasd@gmail.com}{abdulfaheemasd@gmail.com} \quad
+    \faGlobe\ \href{https://areyouroot.github.io}{areyouroot.github.io} \\
+    \faLinkedin\ \href{https://linkedin.com/in/abdul-faheem-a-04a072200}{abdul-faheem-a-04a072200} \quad
+    \faMapMarker\ Chennai, India
+\end{center}
+
+% Professional Summary
+\section{PROFESSIONAL SUMMARY}
+\keyword{Application Security Engineer} with 3+ years of experience securing applications. Seeking entry-level roles in \keyword{Cloud Security Engineering} or advanced roles in \keyword{Cyber Security Automation}.
+
+\section{PROFESSIONAL EXPERIENCE}
+\subsection{Application Security Engineer \& Full-Stack Developer}
+\textit{HUBSTREAM INDIA PVT LTD, Chennai} \hfill \textit{March 2023 -- Present}
+
+\begin{itemize}[leftmargin=*, nosep, after=\vspace{0.2ex}]
+    \item Managed the application security using tools like \keyword{SonarQube} and \keyword{Snyk}; enforced least-privilege access, encryption, and network controls via automated guardrails.
+    \item Built \keyword{DevSecOps} pipelines integrating SAST (SonarQube), DAST (OWASP ZAP), and SCA (Snyk) into Azure Pipelines and GitHub Actions, reducing vulnerability remediation time by 40\%.
+    \item Conducted threat modelling (\keyword{STRIDE}) and \keyword{Zero Trust} workshops, leading to identity-centric access controls and reduced blast radius.
+    \item Automated compliance evidence collection for \keyword{SOC 2} using Vanta.
+    \item Conducted organization-wide \keyword{security awareness} initiatives and simulated \keyword{phishing tests} for end-users, strengthening the company's human-centric security posture and ensuring compliance alignment.
+    \item Engineered \keyword{AI agents} via agentic development frameworks and implemented \keyword{RAG (Retrieval-Augmented Generation)} pipelines integrated with \keyword{n8n} workflow automation to streamline security operations, alert enrichment, and automated incident response playbooks.
+
+\end{itemize}
+
+\section{TECHNICAL SKILLS}
+\begin{itemize}[leftmargin=*, nosep, after=\vspace{0.2ex}]
+    \item \keyword{Secrets \& Identity:} Azure Key Vault (secrets retrieval)
+    \item \keyword{AppSec \& DevSecOps:} SAST/DAST/SCA, OWASP Top 10, Burp Suite, Snyk, SonarQube, CI/CD (GitHub Actions, Azure Pipelines), Phishing Simulations
+    \item \keyword{Automation \& AI:} Agentic AI Development, RAG (Retrieval-Augmented Generation), n8n Workflow Automation
+    \item \keyword{Programming:} Python, Bash, C\# (.NET), TypeScript, SQL, PowerShell
+    \item \keyword{Compliance:} SOC 2
+\end{itemize}
+
+\section{EDUCATION}
+\textbf{B.Tech in Information Technology} – B. S. Abdur Rahman Crescent Institute of Science and Technology, Chennai \\
+CGPA: 8.75/10
+
+\end{document}

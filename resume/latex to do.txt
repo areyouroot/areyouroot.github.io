@@ -1,0 +1,80 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{ragged2e}
+
+% Color for keywords
+\definecolor{keywordcolor}{RGB}{0,102,204}
+\newcommand{\keyword}[1]{\textbf{\textcolor{keywordcolor}{#1}}}
+
+% Font settings
+\allsectionsfont{\sffamily\bfseries}
+\renewcommand{\familydefault}{\sfdefault}
+\linespread{1.05}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.8ex}
+
+% Section formatting
+\titleformat{\section}{\large\sffamily\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titleformat{\subsection}{\sffamily\bfseries}{}{0em}{}
+\titlespacing{\subsection}{0pt}{1ex}{0.5ex}
+
+\hypersetup{colorlinks=true, linkcolor=keywordcolor, urlcolor=keywordcolor}
+\pagestyle{empty}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge \textbf{ABDUL FAHEEM A}} \\[0.3em]
+    \faPhone\ +91 8870682288 \quad
+    \faEnvelope\ \href{mailto:abdulfaheemasd@gmail.com}{abdulfaheemasd@gmail.com} \quad
+    \faGlobe\ \href{https://areyouroot.github.io}{areyouroot.github.io} \\
+    \faLinkedin\ \href{https://linkedin.com/in/abdul-faheem-a-04a072200}{abdul-faheem-a-04a072200} \quad
+    \faMapMarker\ Chennai, India
+\end{center}
+
+% Professional Summary
+\section{PROFESSIONAL SUMMARY}
+\keyword{Cloud Security} and \keyword{Cyber Security Engineer} with 3+ years of experience securing cloud-native environments. Expert in \keyword{CSPM/CNAPP} and \keyword{Zero Trust} architecture. Proven ability to embed security into CI/CD pipelines and automate compliance (\keyword{NIST}). Seeking entry-level roles in \keyword{Cloud Security Engineering} or advanced roles in \keyword{Cyber Security Automation}.
+
+\section{CORE COMPETENCIES}
+\begin{itemize}[leftmargin=*, nosep, after=\vspace{0.2ex}]
+    \item \keyword{Zero Trust} \hfill \keyword{Cloud Security Posture Management}
+    \item \keyword{Threat Modelling (STRIDE)} \hfill \keyword{Compliance Automation (NIST)}
+\end{itemize}
+
+\section{PROFESSIONAL EXPERIENCE}
+\subsection{Application Security Engineer \& Full-Stack Developer}
+\textit{HUBSTREAM INDIA PVT LTD, Chennai} \hfill \textit{March 2023 -- Present}
+
+\begin{itemize}[leftmargin=*, nosep, after=\vspace{0.2ex}]
+    \item Managed \keyword{cloud security posture} across AWS using CSPM/CNAPP tools; enforced least-privilege IAM, encryption, and network controls via automated guardrails.
+    \item Built \keyword{DevSecOps} pipelines integrating SAST (SonarQube), DAST (OWASP ZAP), and SCA (Snyk) into Azure Pipelines and GitHub Actions, reducing vulnerability remediation time by 40\%.
+    \item Conducted threat modelling (\keyword{STRIDE}) and \keyword{Zero Trust} workshops, leading to identity-centric access controls and reduced blast radius.
+    \item Automated compliance evidence collection for \keyword{NIST} using policy-as-code (OPA/Rego) and Terraform.
+    \item Leveraged \keyword{n8n} workflow automation and AI agents to streamline security operations, including alert enrichment and automated incident response playbooks.
+    \item Reviewed \keyword{Terraform} IaC for security misconfigurations; enforced encryption, network segmentation, and least privilege through merge request feedback.
+\end{itemize}
+
+\section{TECHNICAL SKILLS}
+\begin{itemize}[leftmargin=*, nosep, after=\vspace{0.2ex}]
+    \item \keyword{Secrets \& Identity:} AWS Secrets Manager, Azure Key Vault
+    \item \keyword{Cloud Security:} AWS (IAM, GuardDuty, Security Hub, Inspector), Azure Security, CSPM/CNAPP, Terraform, CloudFormation, OPA/Rego
+    \item \keyword{AppSec \& DevSecOps:} SAST/DAST/SCA, OWASP Top 10, Burp Suite, Snyk, SonarQube, CI/CD (GitHub Actions, Azure Pipelines)
+    \item \keyword{Programming:} Python, Bash, C\# (.NET), TypeScript, SQL, PowerShell
+    \item \keyword{Compliance:} NIST 800-53
+\end{itemize}
+
+\section{EDUCATION}
+\textbf{B.Tech in Information Technology} – B. S. Abdur Rahman Crescent Institute of Science and Technology, Chennai \\
+CGPA: 8.75/10
+
+\end{document}
